@@ -1,5 +1,4 @@
-## 
-## 
+## This file contains an implementation of a matrix object that caches it's inverse. 
 ## 
 ## Note: Following code is a modification of the example code provided
 ## in the assignment description.
@@ -48,7 +47,7 @@ cacheSolve <- function(x, ...) {
         return(i)
     }
     data <- x$get()
-    # This assumes that x is invertible
+    ## This assumes that x is invertible
     i <- solve(data, ...)
     x$setinverse(i)
     i
